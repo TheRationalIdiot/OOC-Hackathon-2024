@@ -1,0 +1,52 @@
+/* Container for the entire search bar */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/* The search bar wrapper */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: #6b46c1; /* Purple background */
+  border-radius: 9999px; /* Fully rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for some depth */
+}
+
+/* Buttons for icons (Search and Filter) */
+.search-button, .filter-button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect on buttons */
+.search-button:hover, .filter-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+}
+
+/* Search input field styling */
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Placeholder color for input */
+.search-input::placeholder {
+  color: #b39ddb; /* Light purple */
+}

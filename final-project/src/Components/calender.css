@@ -1,0 +1,98 @@
+/* Style for the calendar container with a purple background to match the search bar */
+.calendar {
+    display: flex;
+    flex-direction: column;
+    background-color:#7b60f5; /* Purple shade matching the search bar */
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 50px auto; /* Adjusted margin to shift the calendar down */
+    padding: 20px;
+    background-color: #7b60f5; /* Purple shade matching the search bar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* White text color for contrast with the purple background */
+  }
+  
+  /* Header styling (Month, Prev, Next buttons) */
+  .d-flex {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  button {
+    margin: 0 10px;
+    background-color: #8e44ad; /* Purple button color */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #732d91; /* Darker purple on hover */
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #ffffff; /* White header text for visibility */
+  }
+  
+  /* Weekdays row styling */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    flex: 1;
+    text-align: center;
+    color: #d1c4e9; /* Light lavender color for weekdays */
+  }
+  
+  /* Cells for each day of the month */
+  .cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d1c4e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 2px;
+    transition: background-color 0.3s ease;
+    color: #ffffff; /* White text for the calendar cells */
+  }
+  
+  .number {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .cell:hover {
+    background-color: #6a0dad; /* Slightly darker purple on hover */
+  }
+  
+  .text-muted {
+    color: #b39ddb; /* Muted lavender color for non-month days */
+  }
+  
+  /* Highlight the event days in a brighter color */
+  .event-day {
+    background-color: #ff4081; /* Pinkish highlight for event days */
+    border-radius: 50%;
+  }
+  
+  .event-day:hover {
+    background-color: #f50057; /* Darker pink on hover */
+  }
+  
+  /* Responsive styling */
+  @media (min-width: 768px) {
+    .calendar {
+      max-width: 400px;
+    }
+  }
+  
